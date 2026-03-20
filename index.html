@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunevi 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<!-- ✅ Login page is its own top-level section -->
+<div id="loginPage">
+  <div class="container">
+    <h2>🔐 Secret Login</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="password" id="roll" placeholder="Roll Number">
+    <button onclick="login()">Enter 💜</button>
+    <div id="errorMsg" style="color:#ff6699;margin-top:10px;display:none;">
+      Wrong Details 😅 Try again!
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Pages are siblings of loginPage, NOT inside .container -->
+<div id="page1">
+  <div class="glow">LUNEVI 💜</div>
+  <h2>🎉 Happy Birthday 🎉</h2>
+  <div class="cake">🎂</div>
+  <div class="typing" id="typing"></div>
+  <ul>
+    <li>🌙 You shine brighter than the moon</li>
+    <li>✨ Your smile makes everyone's day better</li>
+    <li>💜 You have a kind and pure heart</li>
+    <li>🔥 Your confidence is inspiring</li>
+    <li>🌸 You spread positive vibes everywhere</li>
+    <li>👑 You carry a queen-like presence</li>
+    <li>💫 Your uniqueness makes you special</li>
+    <li>🎯 You are intelligent and focused</li>
+    <li>💖 You are truly one of a kind</li>
+  </ul>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div id="page2">
+  <h2>💌 A Message</h2>
+  <div class="message">
+    <p>Dear Lunevi 💜</p>
+    <p>You are someone who brings light and happiness wherever you go.</p>
+    <p>Your presence makes everything more beautiful.</p>
+    <p>I admire your kindness, your strength, and your amazing personality.</p>
+    <p>Sorry if I ever made you feel bad. That was never my intention.</p>
+    <p>You deserve all the happiness in the world.</p>
+    <h3>🎂 Happy Birthday 💜🎉✨🎁</h3>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
